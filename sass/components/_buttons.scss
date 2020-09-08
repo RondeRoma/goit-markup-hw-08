@@ -1,0 +1,78 @@
+.btn-main {
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+}
+.btn-align {
+  text-align: center;
+}
+.btn-portf {
+  display: inline-flex;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: $white-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-filter {
+  display: inline-flex;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border-color: transparent;
+  min-width: 73px;
+  margin-left: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.btn-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+
+  &:hover {
+    fill: $white-color;
+  }
+}
+
+.btn-portf::after {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  padding: 0;
+  content: "";
+  background-image: url(../images/iconsend.svg);
+  background-size: contain;
+}

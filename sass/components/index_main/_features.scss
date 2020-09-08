@@ -1,0 +1,38 @@
+.features {
+  padding: 94px 0;
+}
+
+.features-cont .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.pic-featers {
+  width: 70px;
+  height: 70px;
+}
+
+.img-feat {
+  width: 270px;
+  height: 120px;
+  display: block;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.sect-minititle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.sect-par {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  padding: 0;
+  margin: 0;
+}

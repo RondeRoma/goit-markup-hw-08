@@ -1,0 +1,35 @@
+//Commons
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./base/common";
+@import "./components/logo";
+@import "./components/buttons";
+
+//Header
+@import "./components/header/header";
+
+//Index_main
+//mainbanner
+@import "./components/index_main/mainbanner";
+
+//features
+@import "./components/index_main/features";
+
+//profile
+@import "./components/index_main/profile";
+
+//our_team
+@import "./components/index_main/ourteam";
+
+//castomers
+@import "./components/index_main/castomers";
+
+//portfolio
+@import "./components/portfolio/portfolio";
+
+//footer
+@import "./components/footer/footer";
+
+//modalka
+@import "./components/index_main/modal";
