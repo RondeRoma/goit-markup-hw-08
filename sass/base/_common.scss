@@ -14,11 +14,20 @@ body {
   color: $primary-text-color;
 }
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 .list {
   list-style: none;
@@ -26,8 +35,8 @@ body {
   margin: 0;
 }
 .head-cont {
-  display: flex;
-  align-items: center;
+  //display: flex;
+  // align-items: center;
   padding-top: 0;
   padding-bottom: 0;
   border-bottom: 1px solid #ececec;
@@ -49,10 +58,4 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-.features-cont,
-.our-works,
-.site-nav,
-.team-list {
-  display: flex;
 }
