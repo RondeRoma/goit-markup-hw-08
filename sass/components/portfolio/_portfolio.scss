@@ -1,7 +1,7 @@
 .filter-list {
   display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .title-portf {
@@ -18,12 +18,12 @@
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
+  //display: flex;
+  //flex-wrap: wrap;
 }
 
 .portfolio-list .item {
-  width: calc((100% - 60px) / 3);
+  //width: calc((100% - 60px) / 3);
   border: 1px solid rgb(238, 238, 238);
 }
 .portfolio-list .potf-item-link:hover,

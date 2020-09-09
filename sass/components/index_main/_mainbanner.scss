@@ -1,5 +1,5 @@
 .main-banner {
-  height: 600px;
+  height: 400px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -12,15 +12,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  padding: 118px 60px 198px;
   text-align: center;
 }
 
 .hero-title {
   margin: 0 0 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  //font-size: 44px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white-color;

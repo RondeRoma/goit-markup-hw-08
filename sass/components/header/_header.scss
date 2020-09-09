@@ -1,8 +1,11 @@
-.site-nav {
-  display: flex;
-  align-items: center;
+.header-hidden {
+  display: none;
 }
 
+.site-nav {
+  //display: flex;
+  //align-items: center;
+}
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -43,9 +46,9 @@
 }
 
 .contact-h {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  //display: flex;
+  //align-items: center;
+  //margin-left: auto;
 }
 
 .contact-h .item + .item {
