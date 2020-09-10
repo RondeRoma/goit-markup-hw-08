@@ -1,18 +1,21 @@
 .features {
   padding: 60px 0;
-
   @include for-size(desktop) {
     padding: 94px 0;
   }
 }
 
-.features-cont {
-  //display: flex;
+/*.features-cont {
+  display: flex;
+}*/
+
+.features-cont .item {
+  width: 100%;
 }
 
-.features-cont .item:not(:last-child) {
-  // margin-right: 30px;
-}
+/*.features-cont .item:not(:last-child) {
+   margin-right: 30px;
+}*/
 
 .pic-featers {
   width: 70px;
@@ -29,6 +32,7 @@
 }
 
 .sect-minititle {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
