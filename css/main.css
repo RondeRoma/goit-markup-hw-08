@@ -1304,6 +1304,43 @@ footer {
   padding-bottom: 60px;
 }
 
+@media (min-width: 768px) {
+  .foot-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foot-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .foot-cont > div:not(:last-child) {
+    width: calc((50% - 45px) / 2);
+    margin-right: 30px;
+  }
+  .foot-cont > div:last-child {
+    width: calc(50% - 15px);
+  }
+}
+
 .portf-p {
   font-size: 16px;
   line-height: 1.87;
@@ -1335,12 +1372,29 @@ footer {
   margin-bottom: 9px;
 }
 
-.logo-contacts {
-  margin-bottom: 60px;
+@media (min-width: 768px) {
+  .logo-contacts {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .followus {
+    width: 50%;
+    margin: 0;
+  }
+  input {
+    width: 450px;
+  }
 }
 
 .followus {
+  margin-top: 60px;
   margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .followus {
+    margin: 0;
+  }
 }
 
 .footer-label {
@@ -1359,6 +1413,42 @@ footer {
   color: #ffffff;
 }
 
+.form-footer {
+  display: block;
+}
+
+.form-footer input {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .form-footer {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .input-f {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .logo-contacts,
+  .followus {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .msngrs-f {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1369,7 +1459,7 @@ footer {
 }
 
 .input-f {
-  width: 100%;
+  min-width: 358px;
   height: 50px;
   margin-right: 12px;
   margin-top: 20px;
@@ -1387,6 +1477,7 @@ footer {
 }
 
 .foot-p {
+  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;

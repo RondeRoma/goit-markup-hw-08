@@ -4,10 +4,32 @@ footer {
 }
 
 .foot-cont {
-  //display: flex;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+  @include for-size(desktop) {
+    display: flex;
+
+    text-align: start;
+    align-items: normal;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    & > div:not(:last-child) {
+      width: calc((50% - 45px) / 2);
+      margin-right: 30px;
+    }
+
+    & > div:last-child {
+      width: calc(50% - 15px);
+    }
+  }
 }
 
 .portf-p {
@@ -36,19 +58,26 @@ footer {
   margin-top: 20px;
   margin-bottom: 9px;
 }
-.logo-contacts {
-  //width: 270px;
-  margin-bottom: 60px;
-  //margin-right: 30px;
+
+@include for-size(tablet-landscape) {
+  .logo-contacts {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .followus {
+    width: 50%;
+    margin: 0;
+  }
+  input {
+    width: 450px;
+  }
 }
 .followus {
-  //width: 270px;
+  margin-top: 60px;
   margin-bottom: 60px;
-  // margin-right: 15px;
-}
-.mailbtn {
-  // width: 570px;
-  // margin-left: 15px;
+  @include for-size(desktop) {
+    margin: 0;
+  }
 }
 
 .footer-label {
@@ -62,9 +91,34 @@ footer {
   color: $white-color;
 }
 
-.footer-form {
-  //display: flex;
-  //align-items: baseline;
+.form-footer {
+  display: block;
+  input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@include for-size(desktop) {
+  .form-footer {
+    display: inline-flex;
+  }
+  .input-f {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+
+  .logo-contacts,
+  .followus {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .footer-form {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .msngrs-f {
@@ -72,7 +126,7 @@ footer {
   justify-content: center;
 }
 .input-f {
-  width: 100%;
+  min-width: 358px;
   height: 50px;
   margin-right: 12px;
   margin-top: 20px;
@@ -88,6 +142,7 @@ footer {
 }
 
 .foot-p {
+  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
