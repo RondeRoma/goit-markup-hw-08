@@ -1,5 +1,13 @@
 .profile {
-  display: none;
+  @include for-size(tablet-portrait) {
+    display: none;
+  }
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
   padding-bottom: 94px;
 }
 
@@ -10,9 +18,12 @@
 .profile img {
   display: block;
 }
-.thumb {
+
+.our-works .item {
+  width: calc((100% - 30px * 2) / 3);
   position: relative;
 }
+
 .our-works .item:not(:last-child) {
   margin-right: 30px;
 }
