@@ -1,20 +1,19 @@
 .site-nav {
   display: none;
-  @include for-size(tablet) {
+  @include for-size(tablet-landscape) {
     display: block;
   }
   @include for-size(desktop) {
-    display: flex;
-    align-items: center;
+    display: block;
   }
 }
 
 .contact-h {
   display: none;
-  @include for-size(tablet) {
+  @include for-size(tablet-landscape) {
     display: block;
     &.item:not(:last-child) {
-      margin-right: 30px;
+      margin-bottom: 10px;
     }
     @include for-size(desktop) {
       display: flex;
@@ -53,7 +52,16 @@
   color: $accent-color;
 }
 .site-nav .item {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .site-nav .current::after {
   position: absolute;
@@ -100,10 +108,4 @@
   height: 16px;
   fill: currentColor;
   margin-right: 10px;
-}
-
-.sprite-tel,
-.sprite-mail {
-  margin-right: 10px;
-  fill: currentColor;
 }

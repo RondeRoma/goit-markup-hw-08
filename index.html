@@ -15,7 +15,7 @@
           >Web <span class="logo">Studio</span></a
         >
 
-        <nav>
+        <nav class="navigation">
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link current">Студия</a>
@@ -57,11 +57,11 @@
           >
             <use
               class="icon-cross"
-              href="./images/sprite.svg#icon-close_24px"
+              href="./images/mobile-menu.svg#icon-close_24px"
             ></use>
             <use
               class="icon-menu"
-              href="./images/sprite.svg#icon-menu_24px"
+              href="./images/mobile-menu.svg#icon-menu_24px"
             ></use>
           </svg>
         </button>
@@ -820,5 +820,21 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
