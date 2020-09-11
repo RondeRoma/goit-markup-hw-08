@@ -1,11 +1,32 @@
-.header-hidden {
+.site-nav {
   display: none;
+  @include for-size(tablet) {
+    display: block;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.site-nav {
-  //display: flex;
-  //align-items: center;
+.contact-h {
+  display: none;
+  @include for-size(tablet) {
+    display: block;
+    &.item:not(:last-child) {
+      margin-right: 30px;
+    }
+    @include for-size(desktop) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      &.item:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }
+
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -43,12 +64,6 @@
   background: $accent-color;
   border-radius: 2px;
   bottom: 0;
-}
-
-.contact-h {
-  //display: flex;
-  //align-items: center;
-  //margin-left: auto;
 }
 
 .contact-h .item + .item {

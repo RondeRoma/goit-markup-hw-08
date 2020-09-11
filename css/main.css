@@ -580,7 +580,22 @@ img {
   background-size: contain;
 }
 
-.header-hidden {
+.site-nav {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contact-h {
   display: none;
 }
 
@@ -680,8 +695,8 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/banner.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bannermob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannermob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -689,15 +704,35 @@ img {
   text-align: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: url(../images/bannermob@2x.jpg);
+  }
+}
+
 @media (min-width: 768px) {
   .main-banner {
     padding: 118px 204px 198px;
+    background-image: url(../images/bannertab.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: url(../images/bannertab@2x.jpg);
   }
 }
 
 @media (min-width: 1200px) {
   .main-banner {
     max-width: 1600px;
+    background-image: url(../images/banner.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: url(../images/banner@2x.jpg);
   }
 }
 
