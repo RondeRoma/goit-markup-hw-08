@@ -5,12 +5,25 @@
   }
 }
 
-/*.features-cont {
-  display: flex;
-}*/
+.features-cont {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and(min-width:1200px) {
+    flex-wrap: nowrap;
+  }
+}
 
 .features-cont .item {
-  width: 100%;
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and(min-width:1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
 }
 
 .features-cont .item:not(:last-child) {
