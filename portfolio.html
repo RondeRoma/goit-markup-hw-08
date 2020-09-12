@@ -9,13 +9,36 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container head-cont">
         <a class="logotype link" href="./index.html"
           >Web <span class="logo">Studio</span></a
         >
-        <div class="header-hidden">
-          <nav>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu-button-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/mobile-menu.svg#icon-close_24px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/mobile-menu.svg#icon-menu_24px"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="navigation">
             <ul class="site-nav list">
               <li class="item">
                 <a href="./index.html" class="link">Студия</a>
@@ -26,22 +49,24 @@
               <li class="item"><a href="#" class="link">Контакты</a></li>
             </ul>
           </nav>
-          <ul class="contact-h list">
-            <li class="item">
-              <a class="link mail-h" href="mailto:info@devstudio.com"
-                ><svg class="sprite-mail">
-                  <use href="./images/sprite.svg#icon-mailpic"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a class="link mail-h" href="tel:+380961111111"
-                ><svg class="sprite-tel">
-                  <use href="./images/sprite.svg#icon-phonepic"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="page-header-contacts">
+            <ul class="contact-h list">
+              <li class="item">
+                <a class="link mail-h" href="mailto:info@devstudio.com"
+                  ><svg class="sprite-mail">
+                    <use href="./images/sprite.svg#icon-mailpic"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a class="link mail-h" href="tel:+380961111111"
+                  ><svg class="sprite-tel">
+                    <use href="./images/sprite.svg#icon-phonepic"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -586,5 +611,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
