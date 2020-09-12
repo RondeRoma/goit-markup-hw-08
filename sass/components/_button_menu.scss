@@ -20,6 +20,10 @@
     fill: $accent-color;
   }
 }
+.menu-button-icon:hover,
+.menu-button-icon:focus {
+  fill: $accent-color;
+}
 
 .menu-container {
   width: 100%;
