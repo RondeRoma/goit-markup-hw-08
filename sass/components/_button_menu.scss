@@ -1,34 +1,30 @@
 .menu-button {
   display: inline-flex;
+
   justify-self: flex-end;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
   &-icon {
     display: inline-block;
-    width: 40px;
-    height: 40px;
 
     fill: currentColor;
-
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
   }
-  @include for-tablet {
-    display: none;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 1;
+  border-top: 1px solid #ececec;
+  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
   &.is-open {
     display: block;
     background: #ffffff;
@@ -37,16 +33,35 @@
     padding-bottom: 60px;
     padding-top: 60px;
     text-align: center;
-    @include for-tablet {
-      display: none;
-    }
-    @include for-desktop {
-      display: none;
-    }
   }
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 453px;
+    @include for-size(tablet-landscape) {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      // width: 768px;
+      // height: 80px;
+      padding: 0;
+    }
+    //   display: none;
+  }
+
+  // @include for-size(tablet-landscape) {
+  //   display: none;
+  // }
+  // @include for-size(desktop) {
+  //   display: none;
+  // }
 }
 
-.menu-button .icon-cross {
+.menu-button-icon .icon-cross {
   display: none;
 }
 
