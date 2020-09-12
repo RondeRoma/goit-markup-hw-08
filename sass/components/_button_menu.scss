@@ -1,16 +1,23 @@
 .menu-button {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
+  justify-self: flex-end;
+  margin: 0;
   padding: 0;
-  background-color: #fff;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
+  border: none;
+  background-color: transparent;
+  &-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
   @include for-tablet {
-    display: none;
-  }
-  @include for-desktop {
     display: none;
   }
 }
@@ -37,50 +44,6 @@
       display: none;
     }
   }
-}
-
-.menu-for-phone {
-  margin-bottom: 60px;
-  @include font(500, 14px, 0.02em, $primary-font-family);
-  line-height: 1.14;
-
-  @include font(500, 18px, 0.02em, $primary-font-family);
-  color: $title-text-color;
-  &-item:not(:last-child) {
-    margin-bottom: 40px;
-  }
-}
-.menu-for-phone-item.line {
-  display: inline-block;
-  position: relative;
-}
-
-.address-for-phone {
-  @include font(500, 18px, 0.02em, $primary-font-family);
-  color: $primary-text-color;
-  &-item:not(:last-child) {
-    margin-bottom: 16px;
-  }
-}
-
-.line-menu.current {
-  color: $accent-color;
-}
-
-.line-menu::after {
-  content: "";
-  display: block;
-  position: absolute;
-  opacity: 1;
-
-  height: 4px;
-  width: 100%;
-  background-color: $accent-color;
-  border-radius: 2px;
-  bottom: -22px;
-  transition-property: babackground-color;
-  transition-duration: $timing-function;
-  transition-timing-function: $timing-function;
 }
 
 .menu-button .icon-cross {
