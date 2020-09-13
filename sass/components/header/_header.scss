@@ -23,6 +23,9 @@
 
     justify-content: flex-start;
   }
+  @include for-size(desktop) {
+    height: 80px;
+  }
 }
 
 .site-nav {
@@ -94,8 +97,6 @@
   }
   display: inline-block;
   vertical-align: middle;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   position: relative;
 }

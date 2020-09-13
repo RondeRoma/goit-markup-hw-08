@@ -30,7 +30,8 @@
     }
   }
   @include for-size(desktop) {
-    max-width: 1600px;
+    width: 1600px;
+    max-width: 100%;
     background-image: url(../images/banner.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
