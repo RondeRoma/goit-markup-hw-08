@@ -105,9 +105,9 @@ footer {
     display: inline-flex;
   }
   .input-f {
-    width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
+    min-width: 358px;
   }
 
   .logo-contacts,
@@ -126,7 +126,6 @@ footer {
   justify-content: center;
 }
 .input-f {
-  min-width: 358px;
   height: 50px;
   margin-right: 12px;
   margin-top: 20px;
