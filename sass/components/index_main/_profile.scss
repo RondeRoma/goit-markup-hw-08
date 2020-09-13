@@ -1,4 +1,7 @@
 .profile {
+  @include for-size(phone-only) {
+    display: none;
+  }
   @include for-size(tablet-portrait) {
     display: none;
   }
