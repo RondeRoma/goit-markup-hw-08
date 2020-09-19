@@ -738,6 +738,12 @@ img {
   }
 }
 
+.site-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .site-nav {
     display: block;
@@ -800,6 +806,11 @@ img {
   }
 }
 
+.page-header-contacts {
+  padding-right: 30px;
+  margin-right: 30px;
+}
+
 .site-nav .link {
   display: block;
   font-weight: 500;
@@ -856,6 +867,7 @@ img {
 @media (min-width: 1200px) {
   .contact-h .item + .item {
     margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -1745,7 +1757,7 @@ footer {
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 100%;
+  width: 85%;
   max-width: 450px;
   min-height: 609px;
   background: #ffffff;

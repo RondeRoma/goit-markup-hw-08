@@ -20,7 +20,6 @@
   @include for-size(tablet-landscape) {
     display: flex;
     position: static;
-
     justify-content: flex-start;
   }
   @include for-size(desktop) {
@@ -34,7 +33,7 @@
     width: 99px;
     margin: auto;
   }
-  //align-items: center;
+  align-items: center;
   @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
@@ -69,7 +68,10 @@
     margin-right: 50px;
   }
 }
-
+.page-header-contacts {
+  padding-right: 30px;
+  margin-right: 30px;
+}
 .site-nav .link {
   display: block;
   font-weight: 500;
@@ -117,6 +119,7 @@
   }
   @include for-size(desktop) {
     margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
