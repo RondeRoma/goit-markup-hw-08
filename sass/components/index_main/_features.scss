@@ -52,6 +52,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0 0 10px;
+  @media screen and(min-width:1200px) {
+    text-align: left;
+  }
 }
 .sect-par {
   font-size: 14px;

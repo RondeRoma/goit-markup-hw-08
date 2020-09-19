@@ -1039,6 +1039,12 @@ img {
   margin: 0 0 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .sect-minititle {
+    text-align: left;
+  }
+}
+
 .sect-par {
   font-size: 14px;
   line-height: 1.71;
