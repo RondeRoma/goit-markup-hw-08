@@ -73,6 +73,9 @@
     &:last-child {
       margin-right: 0;
     }
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
   }
 }
 

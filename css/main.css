@@ -1234,6 +1234,9 @@ img {
   .team-list .item:last-child {
     margin-right: 0;
   }
+  .team-list .item:nth-child(2n) {
+    margin-right: 30px;
+  }
 }
 
 .msngrs {
